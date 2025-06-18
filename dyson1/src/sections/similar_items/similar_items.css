@@ -1,0 +1,24 @@
+.similar-items-section {
+    margin-bottom: 150px;
+}
+
+.similar-items-title {
+    font-size: 36px;
+    margin-top: 150px;
+    line-height: 44px;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin-bottom: 60px;
+    text-align: left;
+}
+
+.similar-items-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-bottom: 130px;
+}
+
+.similar-items-show-more {
+    margin-bottom: 0;
+}

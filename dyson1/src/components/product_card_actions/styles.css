@@ -1,0 +1,122 @@
+.product-card__actions {
+    display: flex;
+    font-family: Open Sans;
+    font-weight: 400;
+    font-size: 24px;
+    gap: 0;
+    margin-top: auto;
+    padding: 0;
+}
+
+.product-card__quantity {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1.5px solid #B7B7B7;
+    border-radius: 4px;
+    height: 64px;
+    box-sizing: border-box;
+    flex: 1;
+    gap: 0;
+    padding: 0;
+}
+
+.product-card__quantity-btn {
+    max-height: 64px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    font-size: 28px;
+    color: #222;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.2s;
+    border-radius: 4px;
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+.product-card__quantity-btn:active {
+    background: #ececec;
+}
+
+.product-card__quantity-btn:disabled {
+    opacity: 1;
+    cursor: not-allowed;
+    color: #ABABAB;
+}
+
+.product-card__quantity-input {
+    max-width: 64px;
+    max-height: 64px;
+    border: none;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 400;
+    background: transparent;
+    color: #222;
+    pointer-events: auto;
+}
+
+.product-card__add-to-cart {
+    flex: 1;
+    max-height: 64px;
+    background: #000000;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.product-card__add-to-cart:hover {
+    background: #C5358C;
+}
+
+@media (max-width: 1200px) {
+    .product-card__quantity,
+    .product-card__add-to-cart {
+        height: 48px;
+    }
+
+    .product-card__quantity-btn {
+        max-height: 48px;
+        font-size: 24px;
+    }
+
+    .product-card__quantity-input {
+        max-height: 48px;
+        font-size: 20px;
+    }
+
+    .product-card__add-to-cart {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    .product-card__quantity,
+    .product-card__add-to-cart {
+        height: 40px;
+    }
+
+    .product-card__quantity-btn {
+        max-height: 40px;
+        font-size: 20px;
+    }
+
+    .product-card__quantity-input {
+        max-height: 40px;
+        font-size: 16px;
+    }
+
+    .product-card__add-to-cart {
+        font-size: 14px;
+    }
+} 

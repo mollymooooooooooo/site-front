@@ -1,0 +1,340 @@
+.product-details-tabs {
+    padding-top: 90px;
+    padding-bottom: 150px;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #F5F5F5;
+}
+
+.tabs-header {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+}
+
+.tab-item {
+    padding: 12px 0;
+    font-size: 16px;
+    font-weight: 600;
+    color: #666;
+    background: none;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+    white-space: nowrap;
+    text-align: center;
+    border-bottom: 2px solid #e0e0e0;
+}
+
+.tab-item:hover {
+    color: #000;
+}
+
+.tab-item.active {
+    color: #000;
+    border-bottom: 2px solid #000;
+}
+
+.tab-content {
+    padding: 0px 0;
+}
+
+.tab-content p {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 150%;
+    margin-bottom: 10px;
+}
+
+.tab-content p:last-child {
+    margin-bottom: 0;
+}
+
+.tab-content ol {
+    padding-left: 20px;
+    margin: 10px 0;
+}
+
+.tab-content ol li {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 150%;
+    margin-bottom: 10px;
+    padding-left: 10px;
+}
+
+.tab-content ol li:last-child {
+    margin-bottom: 0;
+}
+
+.specifications-content-wrapper {
+    margin: 120px 115px 0px 115px;
+}
+
+.product-details-tabs .tab-content-description-content-wrapper {
+    margin: 100px 115px 0px 115px;
+}
+/* Styles for bundle content */
+.bundle-content {
+    display: grid;
+    grid-template-columns: 555px 1fr;
+    gap: 20px;
+    align-items: stretch;
+}
+
+.main-bundle-item {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    text-align: left;
+    max-width: 555px;
+    background-color: white;
+    border: 1px solid #e0e0e0;
+    padding: 0 40px 55px 40px;
+    box-sizing: border-box;
+}
+
+.main-bundle-item .bundle-item-image {
+    width: 100%;
+    max-width: 555px;
+    max-height: 801px;
+    height: auto;
+    object-fit: contain;
+}
+
+.bundle-right-column {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.small-bundle-item {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+    border: 1px solid #e0e0e0;
+    padding: 0 40px 55px 40px;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: white;
+}
+
+.small-bundle-item:nth-child(1) {
+    grid-column: 1 / span 2;
+    flex-direction: row;
+    align-items: center;
+    text-align: left;
+    gap: 40px;
+}
+
+.small-bundle-item .bundle-item-image {
+    width: 100%;
+    max-width: 300px;
+    max-height: 300px;
+    height: auto;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.small-bundle-item:nth-child(1) .bundle-item-image {
+    max-width: 250px;
+    margin-bottom: 0;
+}
+
+.bundle-item-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 100%;
+}
+
+.bundle-item-info h3 {
+    font-size: 30px;
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-family: 'NAMU', sans-serif;
+}
+
+.bundle-item-info p {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.5;
+    color: #111111;
+}
+
+.certificates-content {
+    padding: 100px 0 20px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.certificates-grid {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.certificate-image {
+    max-width: 300px;
+    height: auto;
+    display: block;
+    border: 1px solid #e0e0e0;
+    box-sizing: border-box;
+    transition: transform 0.3s ease;
+}
+
+.certificate-image:hover {
+    transform: scale(1.05);
+}
+
+.specifications-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.specifications-table tr:first-child td {
+    border-top: 1px solid #000;
+}
+
+.specifications-table td {
+    padding: 12px 0;
+    border-bottom: 1px solid #000;
+}
+
+.specifications-table td:first-child {
+    color: #666;
+    width: 40%;
+    text-align: left;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.specifications-table td:last-child {
+    text-align: left;
+    font-family: 'NAMU', sans-serif;
+    font-size: 30px;
+    padding: 30px 0 30px 200px;
+}
+
+.delivery-section-wrapper {
+  background: #fafbfc;
+  min-height: 100vh;
+  padding: 0 0 60px 0;
+}
+
+.delivery-section-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.delivery-info-blocks {
+  display: flex;
+  gap: 60px;
+  margin: 48px 0 100px 0;
+  justify-content: center;
+}
+
+.delivery-info-block {
+  flex: 1;
+}
+
+.delivery-info-block h3 {
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+
+.delivery-info-block ul {
+  font-size: 18px;
+  color: #111111;
+  line-height: 1.5;
+  padding-left: 20px;
+  font-family: 'Open Sans';
+  font-weight: 300;
+  list-style-type: disc;
+  list-style-position: inside;
+}
+
+.delivery-info-block ul li {
+  margin-bottom: 5px;
+  padding-bottom: 5px;
+  font-size: 18px;
+}
+
+.delivery-info-block ul li::marker {
+  font-size: 9px;
+}
+
+.delivery-info-block ul li:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.delivery-info-block ul,
+.delivery-info-block ul li {
+  list-style: disc !important;
+  list-style-type: disc !important;
+  list-style-position: inside !important;
+  display: block !important;
+}
+
+.deliverymap-container {
+  width: 100%;
+  height: 608px;
+  position: relative;
+  margin-bottom: 100px;
+}
+
+.delivery-calc-block {
+  flex: 0 0 520px;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.06);
+  padding: 40px 36px 36px 36px;
+  margin: 0;
+}
+
+.delivery-calc-block h3 {
+  font-size: 20px;
+  margin-bottom: 24px;
+  color: #222;
+}
+
+.delivery-calc-field {
+  margin-bottom: 18px;
+}
+
+.delivery-calc-field input,
+.delivery-calc-field select {
+  width: 100%;
+  padding: 12px 16px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 1px solid #e0e0e0;
+  background: #fafbfc;
+}
+
+.delivery-calc-btn {
+  width: 100%;
+  padding: 16px;
+  font-size: 18px;
+  background: #888;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.delivery-calc-btn:hover {
+  background: #666;
+}
+

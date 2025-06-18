@@ -1,0 +1,132 @@
+.special-offers{
+    background-color: #F8F8F8;
+}
+
+
+.special-offers-content{
+    padding-top: 150px;
+    padding-bottom: 150px;
+}
+
+
+.special-offers__title-block {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.special-offers__title {
+    font-size: 46px;
+    font-weight: 600;
+    color: #333;
+}
+
+.special-offers__count {
+    color: #C5358C;
+}
+
+.special-offers__show-more {
+    font-size: 14px;
+    color: #E41E31;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+.special-offers__show-more:hover {
+    text-decoration: underline;
+}
+
+.special-offers__filters {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 32px;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.special-offers__tags {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.special-offers__tag {
+    padding: 8px 16px;
+    border: 1px solid #E5E5E5;
+    border-radius: 20px;
+    background: white;
+    color: #333;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+
+
+.special-offers__tag:hover {
+    border-color: #333;
+}
+
+.special-offers__tag.active {
+    background: #333;
+    color: white;
+    border-color: #333;
+}
+
+.sort-select {
+    padding: 8px 16px;
+    border: 1px solid #C5358C;
+    border-radius: 3px;
+    background: white;
+    font-size: 14px;
+    color: #333;
+    cursor: pointer;
+    min-width: 200px;
+    font-weight: 400;
+}
+
+.sort-select:focus {
+    outline: none;
+}
+
+@media (max-width: 768px) {
+    .special-offers__header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+    }
+
+    .special-offers__filters {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .special-offers__sort {
+        width: 100%;
+    }
+
+    .sort-select {
+        width: 100%;
+    }
+} 
+
+@media (max-width: 576px) {
+    .special-offers__title {
+        font-size: 32px;
+        line-height: 1.2;
+        margin-bottom: 16px;
+
+    }
+    .special-offers__count {
+        font-size: 32px;
+        line-height: 1.2;
+
+    }
+    .special-offers__show-more {
+        font-size: 12px;
+
+    }
+}

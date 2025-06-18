@@ -1,0 +1,433 @@
+.reviews-section {
+    padding: 150px 0;
+    background-color: #fff;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.reviews-content {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.reviews-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.reviews-title {
+    font-size: 32px;
+    font-weight: 600;
+    color: #333;
+    margin: 0;
+}
+.reviews-content {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+}
+
+.reviews-title__count {
+    color: #C5358C;
+    margin-left: 8px;
+
+}
+
+.reviews-header__row {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.reviews-rating-block {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.bignum{
+    font-size: 30px;
+}
+
+.reviews-rating-value {
+    font-size: 24px;
+    font-weight: 600;
+    color: #333;
+}
+
+.reviews-rating-max {
+    font-size: 18px;
+    color: #666;
+}
+
+.reviews-stars {
+    display: flex;
+    gap: 4px;
+}
+
+.star-icon {
+    width: 20px;
+    height: 20px;
+    transition: opacity 0.3s ease;
+}
+
+.star-icon.active {
+    opacity: 1;
+}
+
+.star-icon.inactive {
+    opacity: 0.3;
+}
+
+.reviews-write-btn {
+    padding: 15px 30px;
+    border: 1px solid #111111;
+    border-radius: 3px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    cursor: pointer;
+    max-width: 270px;
+    width: 100%;
+    display: block;
+    transition: opacity 0.3s ease, border-color 0.3s ease;
+}
+
+.reviews-write-btn:hover {
+    opacity: 0.8;
+    border-color: #a0a0a0;
+  }
+
+.reviews-list {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0;
+}
+.review-item-rate {
+    padding: 0px 0 30px;
+    background-color: #fff;
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    gap: 70px;
+}
+
+
+
+
+
+.review-item {
+    padding: 40px 0;
+    background-color: #fff;
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    gap: 70px;
+    border-top: 1px solid #ABABAB;
+    border-bottom: 1px solid #ABABAB;
+}
+
+.review-item:not(:first-child) {
+    border-top: none;
+}
+
+.review-item__left-panel {
+    flex-shrink: 0;
+    width: 116px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+.review-item__name-rating-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+}
+
+.review-item__main-content {
+    flex-grow: 1;
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+.review-item__date {
+    flex-shrink: 0;
+    margin-left: auto;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 150%;
+    color: #666;
+}
+
+.review-item__name {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 150%;
+    color: #333;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    max-width: 100%;
+    display: block;
+}
+
+.review-item__title {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    color: #333;
+    margin-top: 0;
+    margin-bottom: 0;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    max-width: 100%;
+}
+
+.review-item__text {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 140%;
+    color: #444;
+    margin-bottom: 0;
+    font-variant-ligatures: none;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    max-width: 100%;
+}
+
+.review-item__stars {
+    display: flex;
+    gap: 4px;
+}
+
+.review-item__stars--top {
+    /* Этот класс больше не нужен, так как звезды теперь в .review-item__left-panel */
+    /* Но оставляем его, если он где-то еще используется для общего стиля звезд */
+}
+
+.review-item__photos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 16px;
+}
+
+.review-photo {
+    width: 95px;
+    height: 95px;
+    object-fit: cover;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.review-photo:hover {
+    transform: scale(1.05);
+}
+
+.review-item__photos-link {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: #C5358C;
+    text-decoration: none;
+    margin-top: 0;
+    display: block;
+    width: 100%;
+    text-align: left;
+    margin-left: 0;
+}
+
+.review-item__photos-link:hover {
+    text-decoration: underline;
+}
+
+.reviews-footer {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.review-item.with-review-btn {
+    padding-top: 0;
+    border-bottom: none;
+}
+
+@media (max-width: 1200px) {
+    .reviews-section{
+        padding: 60px 0 70px;
+    }
+    .reviews-title{
+        font-size: 26px;
+    }
+    .reviews-write-btn{
+        font-size: 16px;
+    }
+    .star-icon {
+        width: 11px;
+        height: 11px;
+    }
+    .bignum{
+        font-size: 16px;
+    }
+    .review-item__name{
+        font-size: 12px;
+    }
+    .review-item__date{
+        font-size: 12px
+    }
+    .review-item__title{
+        font-size: 14px;
+    }
+    .review-item__text{
+        font-size: 12px;
+    }
+    .review-photo{
+        width: 61px;
+        height: 61px;
+    }
+    .review-item__photos-link{
+        font-size: 12px;
+        text-align: left;
+        margin-left: 0;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .reviews-section{
+        padding: 46px 0 46px;
+    }
+    .reviews-title{
+        font-size: 26px;
+    }
+    .reviews-write-btn{
+        font-size: 16px;
+    }
+    .star-icon {
+        width: 11px;
+        height: 11px;
+    }
+    .bignum{
+        font-size: 16px;
+    }
+    .review-item__name{
+        font-size: 12px;
+    }
+    .review-item__date{
+        font-size: 12px
+    }
+    .review-item__title{
+        font-size: 14px;
+    }
+    .review-item__text{
+        font-size: 12px;
+    }
+    .review-photo{
+        width: 61px;
+        height: 61px;
+    }
+    .review-item__photos-link {
+        font-size: 12px;
+        text-align: left;
+        margin-left: 0;
+    }
+    .review-item__photos {
+        margin-bottom: 0;
+    }
+    .review-item {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        padding: 20px 0;
+        position: relative;
+    }
+
+    .review-item__left-panel {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0;
+        margin: 0;
+    }
+
+    .review-item__name-rating-group {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 2px;
+        width: 100%;
+    }
+
+    .review-item__main-content {
+        width: 100%;
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        margin-top: 8px;
+    }
+
+    .review-item__title {
+        font-size: 16px;
+        font-weight: 700;
+        margin: 0 0 4px 0;
+    }
+
+    .review-item__text {
+        font-size: 14px;
+        text-align: left;
+        margin-bottom: 8px;
+        width: 100%;
+    }
+
+    .review-item__photos {
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        gap: 12px;
+        margin: 0 0 8px 0;
+        width: 100%;
+    }
+
+    .review-photo {
+        min-width: 61px;
+        min-height: 61px;
+        width: 61px;
+        height: 61px;
+        border-radius: 8px;
+        object-fit: cover;
+    }
+
+    .review-item__photos-link {
+        display: block;
+        width: 100%;
+        margin: 0 0 0 0;
+        text-align: left;
+        font-size: 15px;
+        color: #C5358C;
+        font-weight: 400;
+        background: none;
+        border: none;
+        cursor: pointer;
+        padding: 0;
+    }
+}
